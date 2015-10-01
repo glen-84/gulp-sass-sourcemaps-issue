@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "bootstrap": "git://github.com/twbs/bootstrap.git#v4.0.0-alpha",
+    "browser-sync": "^2.9.3",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.2",
+    "gulp-sass": "^2.1.0-beta",
+    "gulp-sourcemaps": "^1.5.2"
+  }
+}
