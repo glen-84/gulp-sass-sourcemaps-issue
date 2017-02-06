@@ -1,8 +1,8 @@
-import gulp from "gulp";
-import sourcemaps from "gulp-sourcemaps";
-import sass from "gulp-sass";
-import autoprefixer from "gulp-autoprefixer";
-import browserSync from "browser-sync";
+const gulp = require("gulp");
+const sourcemaps = require("gulp-sourcemaps");
+const sass = require("gulp-sass");
+const autoprefixer = require("gulp-autoprefixer");
+const browserSync = require("browser-sync");
 
 let bs = browserSync.create("bs-server");
 
@@ -28,6 +28,7 @@ gulp.task("build-css", () => {
 
 gulp.task("serve", ["build-css"], () => {
     bs.init({
+        open: false,
         server: {
             baseDir: "dist"
         }
